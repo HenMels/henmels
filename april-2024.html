@@ -4,27 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Апрель 2024</title>
-    <style>
-        body { font-family: Arial, sans-serif; background: white; padding: 20px; text-align: center; }
-        .poem-list { margin-top: 20px; }
-        a { color: blue; text-decoration: none; display: block; margin: 5px; }
-        a:hover { text-decoration: underline; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Апрель 2024</h1>
-    
-    <div class="poem-list">
-       <a href="april-poem1.html">Не тот, кто вечно счастлив</a>
-        
-       <a href="april-poem2.html">Я не боюсь пуль и оружия</a>
-        
-    </div>
+    <div id="header"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+    </script>
 
-    <div class="navigation">
-        <a href="index.html">← На главную</a>
-    </div>
+    <h1>Апрель 2024</h1>
+    <ul>
+        <li><a href="april-poem1.html">Не тот, кто вечно счастлив</a></li>
+        <li><a href="april-poem2.html">Я не боюсь пуль и оружия</a></li>
+    </ul>
 
 </body>
 </html>
