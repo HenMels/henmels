@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Не тот, кто вечно счастлив</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Верхнее меню -->
+    <div id="header"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                if (document.getElementById('header')) {
+                    document.getElementById('header').innerHTML = data;
+                }
+            })
+            .catch(error => console.log('Ошибка загрузки header.html:', error));
+    </script>
+
+    <h1>Не тот, кто вечно счастлив</h1>
+
+    <p>
+        Не тот, кто вечно счастлив,<br>
+        Открыт принять дары тепла,<br>
+        Внутри него душа угасла,<br>
+        И он не помнит своего лица.<br>
+        <br>
+        Он позабыл свои мечты,<br>
+        И в сердце вечное страданье,<br>
+        Он сам к себе теперь на вы,<br>
+        И делит сам с собой молчание.<br>
+        <br>
+        Быть может, это его кредо,<br>
+        Ему так проще жить,<br>
+        Не познавать людские беды,<br>
+        И по течению плыть.<br>
+        <br>
+        Не принимать своих решений,<br>
+        Не брать опеку за любовь,<br>
+        Возможно, это всё от лени,<br>
+        И от правленья дураков.<br>
+    </p>
+
+    <p><b>Хен Мэлс</b><br>Апрель 2024</p>
+
+    <!-- Навигация между стихами -->
+    <p>
+        <a href="april-2024.html">← Назад (Апрель 2024)</a> |
+        <a href="april-poem2.html">Вперёд (Я не боюсь пуль и оружия) →</a>
+    </p>
+
+</body>
+</html>
