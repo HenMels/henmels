@@ -42,3 +42,27 @@
 
 </body>
 </html>
+<input type="text" id="searchInput" placeholder="Поиск по стихам..." onkeyup="searchPoems()">
+<div id="searchResults"></div>
+
+<script>
+    const poems = [
+        { title: "Название стихотворения 1", text: "Текст стихотворения 1" },
+        { title: "Название стихотворения 2", text: "Текст стихотворения 2" },
+        { title: "Название стихотворения 3", text: "Текст стихотворения 3" }
+    ];
+
+    function searchPoems() {
+        let input = document.getElementById("searchInput").value.toLowerCase();
+        let results = document.getElementById("searchResults");
+        results.innerHTML = "";
+        
+        poems.forEach(poem => {
+            if (poem.text.toLowerCase().includes(input) || poem.title.toLowerCase().includes(input)) {
+                let div = document.createElement("div");
+                div.innerHTML = <h3>${poem.title}</h3><p>${poem.text}</p>;
+                results.appendChild(div);
+            }
+        });
+    }
+</script>
