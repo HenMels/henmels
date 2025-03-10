@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Я не боюсь пуль и оружия</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="header"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+    </script>
+
+    <h1>Я не боюсь пуль и оружия</h1>
+
+    <p>Я не боюсь пуль и оружия,  
+    Быстрая смерть - лучше всего.  
+    Я боюсь твоего равнодушия,  
+    И не чувствовать ничего.</p>
+
+    <p><strong>Хен Мэлс</strong><br>Апрель 2024</p>
+
+    <a href="april-poem1.html">← Назад</a>
+    <a href="april-2024.html">Вперёд →</a>
+
+</body>
+</html>
