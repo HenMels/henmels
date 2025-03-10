@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Апрель 2024</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="header"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+    </script>
+
+    <h1>Апрель 2024</h1>
+    <ul>
+        <li><a href="april-poem1.html">Не тот, кто вечно счастлив</a></li>
+        <li><a href="april-poem2.html">Я не боюсь пуль и оружия</a></li>
+    </ul>
+
+    <a href="march-2024.html">← Назад (Март 2024)</a>
+    <a href="may-2024.html">Вперёд (Май 2024) →</a>
+
+</body>
+</html>
