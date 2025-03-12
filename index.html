@@ -1,3 +1,8 @@
+
+LENTMIN
+23:33 (0 минут назад)
+кому: мне
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -26,9 +31,23 @@
         h1 {
             margin: 0;
         }
+        .social-links {
+            margin-top: 10px;
+        }
+        .social-links a {
+            display: block;
+            text-decoration: none;
+            color: blue;
+            margin-bottom: 5px;
+        }
+        .note {
+            font-size: 12px;
+            color: gray;
+        }
     </style>
 </head>
 <body>
+
 <style>
     .menu-container {
         position: absolute;
@@ -41,7 +60,6 @@
         padding: 10px;
         border-radius: 5px;
     }
-    
     .menu {
         display: none;
         position: absolute;
@@ -52,14 +70,12 @@
         padding: 10px;
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     }
-    
     .menu a {
         display: block;
         padding: 5px;
         text-decoration: none;
         color: black;
     }
-    
     .menu a:hover {
         background: #f0f0f0;
     }
@@ -88,6 +104,7 @@
         menu.style.display = menu.style.display === "block" ? "none" : "block";
     }
 </script>
+
 <input type="text" id="searchInput" placeholder="Поиск по стихам..." onkeyup="searchPoems()">
 <div id="searchResults"></div>
 
@@ -97,21 +114,21 @@
         { title: "Название стихотворения 2", text: "Текст стихотворения 2" },
         { title: "Название стихотворения 3", text: "Текст стихотворения 3" }
     ];
-
     function searchPoems() {
         let input = document.getElementById("searchInput").value.toLowerCase();
         let results = document.getElementById("searchResults");
         results.innerHTML = "";
-        
+
         poems.forEach(poem => {
             if (poem.text.toLowerCase().includes(input) || poem.title.toLowerCase().includes(input)) {
                 let div = document.createElement("div");
-                div.innerHTML = <h3>${poem.title}</h3><p>${poem.text}</p>;
+                div.innerHTML = `<h3>${poem.title}</h3><p>${poem.text}</p>`;
                 results.appendChild(div);
             }
         });
     }
 </script>
+
 <div class="container">
     <img src="photo.jpg" alt="Хен Мэлс">
     <div class="text">
@@ -119,6 +136,12 @@
         <p>Привет.<br>
         Раз сайт Стихи.ру не даёт мне возможности публиковать свои стихи, пусть катится к чёрту.
         Буду выкладывать их здесь – без цензуры, без тупых правил и без лишнего лицемерия.</p>
+
+        <div class="social-links">
+            <p><a href="https://t.me/Henmels" target="_blank">Telegram</a></p>
+            <p><a href="https://www.instagram.com/lentmin?igsh=N2l4azNxMmF6Y3Jt" target="_blank">*Instagram</a></p>
+            <p class="note">* – признан экстремистской организацией на территории РФ.</p>
+        </div>
     </div>
 </div>
 
