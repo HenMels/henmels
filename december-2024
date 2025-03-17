@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Декабрь 2024 — Хен Мэлс</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Главная</a> |
+            <a href="november-2024.html">Ноябрь 2024</a> |
+            <a href="december-2024.html">Декабрь 2024</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Декабрь 2024</h1>
+        <ul>
+            <li><a href="december-2024/1.html">Выбирай любую веру 2</a></li>
+            <li><a href="december-2024/2.html">И скучно, и грустно, и впадлу</a></li>
+            <li><a href="december-2024/3.html">Не просыпайся утром</a></li>
+            <li><a href="december-2024/4.html">Заберите мой бумажник</a></li>
+            <li><a href="december-2024/5.html">Ты умрёшь, и я умру</a></li>
+            <li><a href="december-2024/6.html">Знаешь, насколько ты мне дорог 3</a></li>
+            <li><a href="december-2024/7.html">Белая пешка шагнула вперёд</a></li>
+            <li><a href="december-2024/8.html">Мне подмигнула икона</a></li>
+            <li><a href="december-2024/9.html">Зубная паста для собак</a></li>
+            <li><a href="december-2024/10.html">Небо созвездьями светит (feat к. ополченов, Четвёрка)</a></li>
+            <li><a href="december-2024/11.html">Родился 2</a></li>
+            <li><a href="december-2024/12.html">У меня масок нет 2</a></li>
+        </ul>
+    </main>
+</body>
+</html>
