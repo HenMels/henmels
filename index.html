@@ -99,30 +99,6 @@
         menu.style.display = menu.style.display === "block" ? "none" : "block";
     }
 </script>
-function searchPoems() {
-    let input = document.getElementById("searchInput").value.toLowerCase();
-    let results = document.getElementById("searchResults");
-
-    results.innerHTML = ""; // Очищаем старые результаты
-
-    if (input.trim() === "") {
-        return; // Если поле пустое, не показываем ничего
-    }
-
-    let foundPoems = poems.filter(poem => 
-        poem.title.toLowerCase().includes(input) || 
-        poem.text.toLowerCase().includes(input)
-    );
-
-    foundPoems.forEach(poem => {
-        let div = document.createElement("div");
-        div.innerHTML = <a href="${poem.url}" class="search-link">${poem.title}</a>;
-        results.appendChild(div);
-    });
-}
-<input type="text" id="searchInput" placeholder="Поиск по стихам..." oninput="searchPoems()">
-<div id="searchResults" class="search-results"></div>
-
 <script>
     const poems = [
         { title: "Название стихотворения 1", text: "Текст стихотворения 1" },
@@ -159,31 +135,6 @@ function searchPoems() {
         </div>
     </div>
 </div>
-<script src="poems.js"></script>
-
-<script>
-function searchPoems() {
-    let input = document.getElementById("searchInput").value.toLowerCase();
-    let results = document.getElementById("searchResults");
-
-    results.innerHTML = ""; // Очищаем старые результаты
-
-    if (input.trim() === "") {
-        return; // Если поле пустое, не показываем ничего
-    }
-
-    let foundPoems = poems.filter(poem => 
-        poem.title.toLowerCase().includes(input) || 
-        poem.text.toLowerCase().includes(input)
-    );
-
-    foundPoems.forEach(poem => {
-        let div = document.createElement("div");
-        div.innerHTML = <a href="${poem.url}" class="search-link">${poem.title}</a>;
-        results.appendChild(div);
-    });
-}
-</script>
 
 </body>
 </html>
